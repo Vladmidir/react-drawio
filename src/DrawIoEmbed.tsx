@@ -53,13 +53,13 @@ export const DrawIoEmbed = forwardRef<DrawIoEmbedRef, DrawIoEmbedProps>(
             onConfigure(data);
           }
         },
-        save: (data) => {
-          action.exportDiagram({
-            format: exportFormat || 'xmlsvg',
-            // @ts-ignore not allowed normally, but only for internal use
-            exit: data.exit
-          });
-        },
+        // save: (data) => {
+        //   action.exportDiagram({
+        //     format: exportFormat || 'xmlsvg',
+        //     // @ts-ignore not allowed normally, but only for internal use
+        //     exit: data.exit
+        //   });
+        // },
         exit: (data) => {
           if (onClose) {
             onClose(data);
